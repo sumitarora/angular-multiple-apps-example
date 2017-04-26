@@ -5,6 +5,7 @@
   },
   "apps": [
     {
+      "appRoot": "app1",
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -15,6 +16,32 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "appRoot": "app2",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main2.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test2.ts",
+      "karma": "karma2.conf.js",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
